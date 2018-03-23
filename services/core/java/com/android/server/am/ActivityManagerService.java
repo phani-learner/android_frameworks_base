@@ -537,9 +537,6 @@ public final class ActivityManagerService extends ActivityManagerNative
     private static final String INTENT_REMOTE_BUGREPORT_FINISHED =
             "android.intent.action.REMOTE_BUGREPORT_FINISHED";
 
-    private static final String ACTION_POWER_OFF_ALARM =
-            "org.codeaurora.alarm.action.POWER_OFF_ALARM";
-
     // Delay to disable app launch boost
     static final int APP_BOOST_MESSAGE_DELAY = 3000;
     // Lower delay than APP_BOOST_MESSAGE_DELAY to disable the boost
@@ -2356,19 +2353,16 @@ public final class ActivityManagerService extends ActivityManagerNative
                     Intent infoIntent = new Intent(Settings.ACTION_APP_OPS_DETAILS_SETTINGS,
                             Uri.fromParts("package", root.packageName, null));
 
-                    Notification notification = new Notification();
-                    notification.icon = com.android.internal.R.drawable.stat_notify_privacy_guard;
-                    notification.when = 0;
-                    notification.flags = Notification.FLAG_ONGOING_EVENT;
-                    notification.priority = Notification.PRIORITY_LOW;
-                    notification.defaults = 0;
-                    notification.sound = null;
-                    notification.vibrate = null;
-                    notification.setLatestEventInfo(mContext,
-                            title, text,
-                            PendingIntent.getActivityAsUser(mContext, 0, infoIntent,
-                                    PendingIntent.FLAG_CANCEL_CURRENT, null,
+                    Notification.Builder builder = new Notification.Builder(mContext);
+                    builder.setSmallIcon(com.android.internal.R.drawable.stat_notify_privacy_guard)
+                            .setOngoing(true)
+                            .setPriority(Notification.PRIORITY_LOW)
+                            .setContentTitle(title)
+                            .setContentText(text)
+                            .setContentIntent(PendingIntent.getActivityAsUser(mContext, 0,
+                                    infoIntent, PendingIntent.FLAG_CANCEL_CURRENT, null,
                                     new UserHandle(root.userId)));
+                    Notification notification = builder.build();
 
                     try {
                         int[] outId = new int[1];

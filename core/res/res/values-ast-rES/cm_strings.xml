@@ -47,11 +47,11 @@
   <!-- Restart Progress Dialog. This is shown if the user chooses to restart the phone. -->
   <string name="reboot_progress">Reaniciando\u2026</string>
   <!-- ADB over network notification -->
-  <string name="adb_net_active_notification_title">ADB sobre rede habilitáu</string>
+  <string name="adb_net_active_notification_title">ADB per rede activáu</string>
   <!-- ADB over USB and network notification -->
-  <string name="adb_both_active_notification_title">ADB sobre USB y rede habilitáu</string>
+  <string name="adb_both_active_notification_title">ADB per USB y rede activáu</string>
   <!-- ADB notification message-->
-  <string name="adb_active_generic_notification_message">Toca pa deshabilitar la depuración.</string>
+  <string name="adb_active_generic_notification_message">Toca pa desactivar la depuración.</string>
   <!-- Privacy Guard -->
   <string name="permlab_changePrivacyGuardState">habilitar o deshabilitar la privacidá</string>
   <string name="permdesc_changePrivacyGuardState">Permite que l\'aplicación cambie l\'estáu de privacidá d\'otra. Cuando una aplicación s\'executa cola privacidá habilitada, nun va poder acceder a los datos personales, talos como contautos, mensaxes o rexistros de llamaes.</string>
@@ -121,7 +121,7 @@
   <string name="app_ops_assist_screenshot">facer una captura</string>
   <string name="app_ops_use_body_sensors">usar sensores corporales</string>
   <string name="app_ops_read_cell_broadcasts">lleer tresmisiones celulares</string>
-  <string name="app_ops_mock_location">simular l\'allugamientu</string>
+  <string name="app_ops_mock_location">falsiar el to allugamientu</string>
   <string name="app_ops_read_external_storage">lleer almacenamientu esternu</string>
   <string name="app_ops_write_external_storage">escribir nel almacenamientu esternu</string>
   <string name="app_ops_turn_on_screen">prender pantalla</string>
@@ -143,4 +143,7 @@
   <string name="tethered_notification_no_device_message">Nun hai dengún preséu coneutáu</string>
   <string name="tethered_notification_one_device_message"><xliff:g id="count">%1$s</xliff:g> preséu coneutáu</string>
   <string name="tethered_notification_multi_device_message"><xliff:g id="count">%1$s</xliff:g> preseos coneutaos</string>
+  <!-- Zen mode buttons -->
+  <string name="silent_mode_priority">Prioridá</string>
+  <string name="silent_mode_none">Dengún</string>
 </resources>

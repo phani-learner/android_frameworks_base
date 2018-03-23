@@ -22,6 +22,18 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
   <!-- Content description of the light brightness slider (not shown on the screen). [CHAR LIMIT=NONE] -->
   <string name="accessibility_notification_brightness">Jasność światła</string>
+  <!-- Content description of the profiles tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles_off">Profile wyłączone.</string>
+  <!-- Content description of the profiles tile in quick settings (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles">Profil: <xliff:g id="profile" example="Default">%s</xliff:g>.</string>
+  <!-- Announcement made when the profiles tile changes to off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles_changed_off">Profile zostały wyłączone.</string>
+  <!-- Announcement made when the profiles tile changes (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="accessibility_quick_settings_profiles_changed">Profil zmieniony na <xliff:g id="profile" example="Default">%s</xliff:g>.</string>
+  <!-- Content description of the profiles tile in quick settings when off (not shown on the screen). [CHAR LIMIT=NONE] -->
+  <string name="quick_settings_profiles_off">Profile wyłączone.</string>
+  <!-- Content description of the system profiles  -->
+  <string name="quick_settings_profiles">Profile systemowe</string>
   <!-- Lights settings, LED notification -->
   <string name="led_notification_title">Ustawienia diody</string>
   <string name="led_notification_text">Diody LED włączone przez ustawienia</string>
@@ -130,8 +142,8 @@
   <string name="quick_settings_location_battery_saving_label">Oszczędzanie baterii</string>
   <string name="quick_settings_location_battery_saving_label_twoline">Oszczędzanie\nenergii</string>
   <!-- QuickSettings: Location (On, gps-only) [CHAR LIMIT=NONE] -->
-  <string name="quick_settings_location_gps_only_label">Tylko GPS</string>
-  <string name="quick_settings_location_gps_only_label_twoline">Tylko GPS</string>
+  <string name="quick_settings_location_gps_only_label">Tylko urządzenie</string>
+  <string name="quick_settings_location_gps_only_label_twoline">Tylko\nurządzenie</string>
   <!-- QuickSettings: Location (On, high-accuracy) [CHAR LIMIT=NONE] -->
   <string name="quick_settings_location_high_accuracy_label">Wysoka dokładność</string>
   <string name="quick_settings_location_high_accuracy_label_twoline">Wysoka\ndokładność</string>
@@ -180,4 +192,30 @@
   <!-- Volume panel QS tile -->
   <string name="quick_settings_sync_label">Synchronizacja</string>
   <string name="quick_settings_volume_panel_label">Panel głośności</string>
+  <!-- Content description for Accessibility on unlocked tasks in recents -->
+  <string name="accessibility_lock_task">Zapobiegnij, aby <xliff:g id="task">%1$s </xliff:g> zostało odrzucone</string>
+  <!-- Content description for Accessibility on locked tasks in recents -->
+  <string name="accessibility_unlock_task">Zezwól, aby <xliff:g id="task">%1$s </xliff:g> zostało odrzucone</string>
+  <!-- LiveDisplay strings -->
+  <string name="live_display_auto">Automatycznie</string>
+  <string name="live_display_auto_summary">Automatycznie dostosuj temperaturę kolorów ekranu po zachodzie i wschodzie słońca</string>
+  <string name="live_display_off">Wyłączone</string>
+  <string name="live_display_off_summary">Wyłącz wszystkie zmiany</string>
+  <string name="live_display_day">Dzień</string>
+  <string name="live_display_day_summary">Używaj tylko dziennych ustawień</string>
+  <string name="live_display_night">Noc</string>
+  <string name="live_display_night_summary">Używaj tylko nocnych ustawień</string>
+  <string name="live_display_outdoor">Na zewnątrz (jasne światło)</string>
+  <string name="live_display_outdoor_summary">Używaj tylko ustawień na zewnątrz</string>
+  <string name="live_display_hint">LiveDisplay może pomóc w zredukowaniu efektu zmęczenia oczu oraz pomaga zasnąć w nocy. Kliknij tutaj, aby wypróbować!</string>
+  <string name="accessibility_quick_settings_live_display_off">LiveDisplay wyłączone.</string>
+  <string name="accessibility_quick_settings_live_display_auto">LiveDisplay: tryb automatyczny.</string>
+  <string name="accessibility_quick_settings_live_display_day">LiveDisplay: tryb dzienny.</string>
+  <string name="accessibility_quick_settings_live_display_night">LiveDisplay: tryb nocny.</string>
+  <string name="accessibility_quick_settings_live_display_outdoor">LiveDisplay: tryb na zewnątrz.</string>
+  <string name="accessibility_quick_settings_live_display_changed_off">LiveDisplay został wyłączony.</string>
+  <string name="accessibility_quick_settings_live_display_changed_auto">LiveDisplay zmieniony na tryb automatyczny.</string>
+  <string name="accessibility_quick_settings_live_display_changed_day">LiveDisplay zmieniony na tryb dzienny.</string>
+  <string name="accessibility_quick_settings_live_display_changed_night">LiveDisplay zmieniony na tryb nocny.</string>
+  <string name="accessibility_quick_settings_live_display_changed_outdoor">LiveDisplay przełączono na tryb na zewnątrz.</string>
 </resources>
