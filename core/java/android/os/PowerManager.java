@@ -1046,7 +1046,6 @@ public final class PowerManager {
             throw e.rethrowFromSystemServer();
         }
     }
-
     /**
      * Turn off the device.
      *
@@ -1062,6 +1061,16 @@ public final class PowerManager {
         } catch (RemoteException e) {
             throw e.rethrowFromSystemServer();
         }
+    }
+    public String getSeenWakeLocks()
+    {
+	try {
+	    if (mService != null) {
+		return mService.getSeenWakeLocks();
+	    }
+	} catch (RemoteException e) {
+	}
+	return null;
     }
 
     /**
