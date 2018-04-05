@@ -95,15 +95,15 @@ public class KeyguardHostView extends FrameLayout implements SecurityCallback {
                 }
             }
         }
-    };
-
         @Override
         public void onTrustChanged(int userId) {
             if (userId != KeyguardUpdateMonitor.getCurrentUser()) return;
             if (mKeyguardUpdateMonitor.getUserCanSkipBouncer(userId) && mKeyguardUpdateMonitor.getUserHasTrust(userId)){
-                dismiss(false, userId);
+                dismiss(false);
             }
         } 
+    };
+
     // Whether the volume keys should be handled by keyguard. If true, then
     // they will be handled here for specific media types such as music, otherwise
     // the audio service will bring up the volume dialog.
