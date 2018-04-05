@@ -3196,6 +3196,13 @@
         android:description="@string/permdesc_modifyOverlays"
         android:protectionLevel="signatureOrSystem" />
 
+    <!-- @hide Allows an application to change the package signature as
+         seen by applications -->
+    <permission android:name="android.permission.FAKE_PACKAGE_SIGNATURE"
+        android:protectionLevel="dangerous"
+        android:label="@string/permlab_fakePackageSignature"
+        android:description="@string/permdesc_fakePackageSignature" />
+
     <application android:process="system"
                  android:persistent="true"
                  android:hasCode="false"
